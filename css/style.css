@@ -1,0 +1,95 @@
+body, main{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.menu-complete{
+    width: 100%;
+    height: 10vh;
+}
+
+.menu-complete .row{
+    width: 100%;
+    height: 10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+}
+
+.menu-complete .row ul{
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-complete .row ul li{
+    font-family:  Arial, Helvetica, sans-serif;
+    font-style: italic;    
+    font-size: 1.5em;
+    padding: 5px 10px;
+    list-style: none;
+}
+
+.menu-complete .row ul li:hover{
+    background-color: lightblue;
+}
+
+.menu-complete .row ul li a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .menu-mobile{
+        display: block;
+    }
+
+    .menu-mobile .row{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E5E5E5;
+    }
+
+    .menu-mobile .row ul{
+        padding-left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .menu-mobile .row ul li{
+        font-family: 'Karantina', cursive;
+        font-size: 1.5em;
+        width: 100%;
+        height: 100%;
+        padding: 7px 0px;
+        list-style: none;
+        text-align: center;
+    }
+
+    .menu-mobile .row ul li:hover{
+        background-color: #d1cdcd;
+    }
+
+    .menu-mobile .row ul li a {
+        text-decoration: none;
+        width: 100%;
+        color: black;
+        letter-spacing: 1.5px;
+    }
+
+    .menu-complete{
+        display: none;
+    }
+}
